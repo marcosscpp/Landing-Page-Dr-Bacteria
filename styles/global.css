@@ -1,0 +1,27 @@
+.container {
+  padding: 0 40px;
+}
+
+.orange {
+  color: var(--e1);
+}
+
+.centralized {
+  text-align: center;
+}
+
+.title {
+  display: block;
+  font-weight: 700;
+}
+
+.green-btn {
+  background-color: var(--e2);
+  border: 0;
+  border-radius: 12px;
+  color: var(--c1);
+  font-weight: bolder;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 20px 15px;
+}

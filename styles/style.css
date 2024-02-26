@@ -1,0 +1,43 @@
+@import url("global.css");
+@import url("footer.css");
+@import url("hero.css");
+
+:root {
+  --e1: #ee6c22;
+  --e2: #38e900;
+  --c1: #ffffff;
+  --c2: #e7e6e6;
+  --c3: #bfbfbf;
+  --c4: #757474;
+  --c5: #514c4c;
+  --c6: #000000;
+
+  --primary-font: "Montserrat", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: var(--primary-font);
+}
+
+body {
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}

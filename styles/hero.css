@@ -1,0 +1,92 @@
+.hero-section {
+  background: url("../assets/img/kitchen.png") center no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 40px;
+}
+
+.hero-content {
+  color: var(--c5);
+}
+
+.main-logo {
+  text-align: center;
+  width: 160px;
+}
+
+.hero-title {
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 6px;
+}
+
+.hero-title strong {
+  display: block;
+  font-style: italic;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.hero-main-content {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 30px;
+  line-height: 1.3;
+}
+
+.hero-description {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-top: 20px;
+}
+
+.hero-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.hero-form div {
+  display: flex;
+  gap: 5px;
+}
+
+.hero-form div input {
+  flex: 1;
+}
+
+.hero-form input:not(input[type='submit']) {
+  color: var(--c1);
+  background-color: var(--c3);
+  border: 0;
+  border-radius: 12px;
+  opacity: 1;
+  font-size: 18px;
+  padding: 20px 30px;
+}
+
+.hero-form input[type="submit"] {
+  margin-top: 10px;
+}
+
+.hero-form input::placeholder {
+  color: var(--c1);
+  font-weight: 600;
+}
+
+
+.hero-image {
+  height: 80%;
+}
+
+.hero-image img {
+  height: auto;
+}
