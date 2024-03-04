@@ -64,5 +64,8 @@
 
 .hero__image {
   height: auto;
-  width: 90%;
+}
+
+.swiper {
+  background-color: red;
 }

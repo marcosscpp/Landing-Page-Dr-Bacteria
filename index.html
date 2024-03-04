@@ -1,74 +1,242 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Dr Bactéria - Vida sem Germes</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/style.css">
-  <title>Dr Bactéria - Vida sem Germes</title>
-</head>
-
-<body>
-  <main>
-    <section class="hero container">
-      <div class="hero__content">
-        <div class="centralized">
-          <img class="main-logo" src="./assets/icons/main-logo-tall.svg" alt="Vida sem Germes do mal">
-          <h1 class="hero__title">O segredo para uma casa saudável e segura <strong>com Dr Bactéria</strong></h1>
-        </div>
-        <p class="hero__main-content">DESCUBRA COMO PROTEGER SUA FAMÍLIA DE DOENÇAS COM <strong class="orange">DICAS SIMPLES E EFICAZES DE HIGIENE</strong>, DIRETO DO ESPECIALISTA DR. BACTÉRIA</p>
-        <div class="hero__description">
-          <strong class="orange title">TRANSFORME SEU LAR EM UM AMBIENTE DE BEM-ESTAR</strong>
-          <p>Com métodos comprovados e fáceis de seguir, o Dr. Bactéria guiará você por um caminho de saúde impenetrável, adequado para todas as idades</p>
-        </div>
-        <form class="hero__form">
-          <div class="col-2">
-            <input class="default-input" type="text" name="complete-name" id="complete-name" placeholder="Seu nome" required>
-            <input class="default-input" type="tel" name="whatsapp" id="whatsapp" placeholder="Seu Whatsapp" pattern="^(\+55\s?)?(\([1-9]{2}\)\s?)?9([0-9]{4})-?([0-9]{4})$" required>
+  <body>
+    <main>
+      <section class="hero container">
+        <div class="hero__content">
+          <div class="centralized">
+            <img
+              class="main-logo"
+              src="./assets/icons/main-logo-tall.svg"
+              alt="Vida sem Germes do mal"
+            />
+            <h1 class="hero__title">
+              O segredo para uma casa saudável e segura
+              <strong>com Dr Bactéria</strong>
+            </h1>
           </div>
-          <input class="default-input" type="email" name="email" id="email" placeholder="Seu Email" required>
-          <input class="green-btn" type="submit" value="Quero Assistir a Aula Agora!">
-        </form>
-      </div>
-      <img class="hero__image" src="./assets/img/dr-bacteria-orange-box.png" alt="Foto Dr.Bactéria.">
-    </section>
-    <div class="room-background">
-      <section class="advantages container">
-        <h2 class="advantages__title orange">Como este Workshop pode te ajudar?</h2>
-        <div class="cards__container">
-          <div class="card">
-            <img class="card__img" src="./assets/img/card1.png" alt="Fotografia de uma mulher com sua filha na cozinha.">
-            <div class="card__content">
-              <h3 class="card__title">O segredo para uma casa saudável e segura</h3>
-              <p class="card__text">Preocupado(a) com os "germes do mal" que se ocultam nos cantos da sua casa, colocando em risco a saúde e o bem-estar de sua família? Não se desespere!<span>Não é necessário isolar-se do mundo.</span>
-              </p>
+          <p class="hero__main-content">
+            DESCUBRA COMO PROTEGER SUA FAMÍLIA DE DOENÇAS COM
+            <strong class="orange">DICAS SIMPLES E EFICAZES DE HIGIENE</strong>,
+            DIRETO DO ESPECIALISTA DR. BACTÉRIA
+          </p>
+          <div class="hero__description">
+            <strong class="orange title"
+              >TRANSFORME SEU LAR EM UM AMBIENTE DE BEM-ESTAR</strong
+            >
+            <p>
+              Com métodos comprovados e fáceis de seguir, o Dr. Bactéria guiará
+              você por um caminho de saúde impenetrável, adequado para todas as
+              idades
+            </p>
+          </div>
+          <form class="hero__form">
+            <div class="col-2">
+              <input
+                class="default-input"
+                type="text"
+                name="complete-name"
+                id="complete-name"
+                placeholder="Seu nome"
+                required
+              />
+              <input
+                class="default-input"
+                type="tel"
+                name="whatsapp"
+                id="whatsapp"
+                placeholder="Seu Whatsapp"
+                pattern="^(\+55\s?)?(\([1-9]{2}\)\s?)?9([0-9]{4})-?([0-9]{4})$"
+                required
+              />
             </div>
-          </div>
-
-          <div class="card">
-            <img class="card__img" src="./assets/img/card2.png" alt="Fotografia de uma mulher com sua filha na cozinha.">
-            <div class="card__content">
-              <h3 class="card__title">Transforme sua residência num ambiente de saúde e bem-estar
-              </h3>
-              <p class="card__text">Sob a expert guidance do Dr. Bactéria, um ícone da microbiologia, você será conduzido(a) através de um percurso infalível para alcançar uma saúde robusta, com estratégias simples e comprovadas, perfeitas para pessoas de todas as faixas etárias.
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img class="card__img" src="./assets/img/card3.png" alt="Fotografia de uma mulher com sua filha na cozinha.">
-            <div class="card__content">
-              <p class="card__text"> Imagine um lar completamente seguro de ameaças ocultas. Esta realidade pode estar mais ao seu alcance do que você pensa!</p>
-            </div>
-          </div>
-
+            <input
+              class="default-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Seu Email"
+              required
+            />
+            <input
+              class="green-btn"
+              type="submit"
+              value="Quero Assistir a Aula Agora!"
+            />
+          </form>
         </div>
+        <img
+          class="hero__image"
+          src="./assets/img/dr-bacteria-orange-box.png"
+          alt="Foto Dr.Bactéria."
+        />
       </section>
-    </div>
-  </main>
-</body>
+      <div class="room-background">
+        <section class="advantages container">
+          <h2 class="advantages__title orange">
+            Como este Workshop pode te ajudar?
+          </h2>
+          <div class="cards__container">
+            <div class="card">
+              <img
+                class="card__img"
+                src="./assets/img/card1.png"
+                alt="Fotografia de uma mulher com sua filha na cozinha."
+              />
+              <div class="card__content">
+                <h3 class="card__title">
+                  O segredo para uma casa saudável e segura
+                </h3>
+                <p class="card__text">
+                  Preocupado(a) com os "germes do mal" que se ocultam nos cantos
+                  da sua casa, colocando em risco a saúde e o bem-estar de sua
+                  família? Não se desespere!<span
+                    >Não é necessário isolar-se do mundo.</span
+                  >
+                </p>
+              </div>
+            </div>
 
+            <div class="card">
+              <img
+                class="card__img"
+                src="./assets/img/card2.png"
+                alt="Fotografia de uma mulher com sua filha na cozinha."
+              />
+              <div class="card__content">
+                <h3 class="card__title">
+                  Transforme sua residência num ambiente de saúde e bem-estar
+                </h3>
+                <p class="card__text">
+                  Sob a expert guidance do Dr. Bactéria, um ícone da
+                  microbiologia, você será conduzido(a) através de um percurso
+                  infalível para alcançar uma saúde robusta, com estratégias
+                  simples e comprovadas, perfeitas para pessoas de todas as
+                  faixas etárias.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                class="card__img"
+                src="./assets/img/card3.png"
+                alt="Fotografia de uma mulher com sua filha na cozinha."
+              />
+              <div class="card__content">
+                <p class="card__text">
+                  Imagine um lar completamente seguro de ameaças ocultas. Esta
+                  realidade pode estar mais ao seu alcance do que você pensa!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper__container">
+            <div class="advantages__swiper" data-swiper="advantages">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper__card">
+                    <img
+                      class="card__icon"
+                      src="./assets/icons/gloves.svg"
+                      alt="Ícone Luvas"
+                    />
+                    <h4 class="card__title">Segredos de Limpeza</h4>
+                    <p class="card__text">
+                      Métodos não apenas para limpar, mas para desinfetar sua
+                      casa, eliminando efetivamente germes e bactérias.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__card">
+                    <img
+                      class="card__icon"
+                      src="./assets/icons/spray.svg"
+                      alt="Ícone Borrifador"
+                    />
+                    <h4 class="card__title">Higiene Pessoal Reforçada</h4>
+                    <p class="card__text">
+                      Dicas práticas para incrementar a higiene pessoal de cada
+                      membro da família.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__card">
+                    <img
+                      class="card__icon"
+                      src="./assets/icons/food.svg"
+                      alt="Ícone Salada"
+                    />
+                    <h4 class="card__title">
+                      Preparo e Conservação de Alimentos
+                    </h4>
+                    <p class="card__text">
+                      Técnicas para manusear, preparar e armazenar alimentos de
+                      maneira segura, evitando contaminações.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper__card">
+                    <img
+                      class="card__icon"
+                      src="./assets/icons/apron.svg"
+                      alt="Ícone Avental"
+                    />
+                    <h4 class="card__title">Cultura da Prevenção</h4>
+                    <p class="card__text">
+                      Como criar uma rotina sustentável de higiene que se
+                      integre ao seu dia a dia .
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper__card">
+                    <img
+                      class="card__icon"
+                      src="./assets/icons/bucket.svg"
+                      alt="Ícone Balde"
+                    />
+                    <h4 class="card__title">Checklist de Saúde Doméstica</h4>
+                    <p class="card__text">
+                      Um guia completo para revisar e melhorar cada canto da sua
+                      casa, garantindo a proteção contra os mais diversos
+                      patógenos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
