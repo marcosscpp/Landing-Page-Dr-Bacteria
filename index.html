@@ -12,33 +12,63 @@
 </head>
 
 <body>
-  <section class="hero-section container">
-    <div class="hero-content">
-      <div class="centralized">
-        <img class="main-logo" src="./assets/icons/main-logo-tall.svg" alt="Vida sem Germes do mal">
-        <h1 class="hero-title">O segredo para uma casa saudável e segura <strong>com Dr Bactéria</strong></h1>
-      </div>
-      <p class="hero-main-content">DESCUBRA COMO PROTEGER SUA FAMÍLIADE DOENÇAS COM <strong class="orange">DICAS SIMPLES E EFICAZES DE HIGIENE</strong>, DIRETO DO ESPECIALISTA DR. BACTÉRIA</p>
-      <div class="hero-description">
-        <strong class="orange title">TRANSFORME SEU LAR EM UM AMBIENTE DE BEM-ESTAR</strong>
-        <p>Com métodos comprovados e fáceis de seguir, o Dr. Bactéria guiará você por um caminho de saúde impenetrável, adequado para todas as idades</p>
-      </div>
-      <form class="hero-form">
-        <div class="col-2">
-          <input type="text" name="complete-name" id="complete-name" placeholder="Seu nome">
-          <input type="tel" name="whatsapp" id="whatsapp" placeholder="Seu Whatsapp">
+  <main>
+    <section class="hero container">
+      <div class="hero__content">
+        <div class="centralized">
+          <img class="main-logo" src="./assets/icons/main-logo-tall.svg" alt="Vida sem Germes do mal">
+          <h1 class="hero__title">O segredo para uma casa saudável e segura <strong>com Dr Bactéria</strong></h1>
         </div>
-        <input type="email" name="email" id="email" placeholder="Seu Email">
-        <input class="green-btn" type="submit" value="Quero Assistir a Aula Agora!">
-      </form>
-    </div>
-    <div class="hero-image">
-      <img src="./assets/img/dr-bacteria-orange-box.png" alt="Foto Dr Bactéria">
-    </div>
-    <div>
+        <p class="hero__main-content">DESCUBRA COMO PROTEGER SUA FAMÍLIA DE DOENÇAS COM <strong class="orange">DICAS SIMPLES E EFICAZES DE HIGIENE</strong>, DIRETO DO ESPECIALISTA DR. BACTÉRIA</p>
+        <div class="hero__description">
+          <strong class="orange title">TRANSFORME SEU LAR EM UM AMBIENTE DE BEM-ESTAR</strong>
+          <p>Com métodos comprovados e fáceis de seguir, o Dr. Bactéria guiará você por um caminho de saúde impenetrável, adequado para todas as idades</p>
+        </div>
+        <form class="hero__form">
+          <div class="col-2">
+            <input class="default-input" type="text" name="complete-name" id="complete-name" placeholder="Seu nome" required>
+            <input class="default-input" type="tel" name="whatsapp" id="whatsapp" placeholder="Seu Whatsapp" pattern="^(\+55\s?)?(\([1-9]{2}\)\s?)?9([0-9]{4})-?([0-9]{4})$" required>
+          </div>
+          <input class="default-input" type="email" name="email" id="email" placeholder="Seu Email" required>
+          <input class="green-btn" type="submit" value="Quero Assistir a Aula Agora!">
+        </form>
+      </div>
+      <img class="hero__image" src="./assets/img/dr-bacteria-orange-box.png" alt="Foto Dr.Bactéria.">
+    </section>
+    <div class="room-background">
+      <section class="advantages container">
+        <h2 class="advantages__title orange">Como este Workshop pode te ajudar?</h2>
+        <div class="cards__container">
+          <div class="card">
+            <img class="card__img" src="./assets/img/card1.png" alt="Fotografia de uma mulher com sua filha na cozinha.">
+            <div class="card__content">
+              <h3 class="card__title">O segredo para uma casa saudável e segura</h3>
+              <p class="card__text">Preocupado(a) com os "germes do mal" que se ocultam nos cantos da sua casa, colocando em risco a saúde e o bem-estar de sua família? Não se desespere!<span>Não é necessário isolar-se do mundo.</span>
+              </p>
+            </div>
+          </div>
 
+          <div class="card">
+            <img class="card__img" src="./assets/img/card2.png" alt="Fotografia de uma mulher com sua filha na cozinha.">
+            <div class="card__content">
+              <h3 class="card__title">Transforme sua residência num ambiente de saúde e bem-estar
+              </h3>
+              <p class="card__text">Sob a expert guidance do Dr. Bactéria, um ícone da microbiologia, você será conduzido(a) através de um percurso infalível para alcançar uma saúde robusta, com estratégias simples e comprovadas, perfeitas para pessoas de todas as faixas etárias.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card__img" src="./assets/img/card3.png" alt="Fotografia de uma mulher com sua filha na cozinha.">
+            <div class="card__content">
+              <p class="card__text"> Imagine um lar completamente seguro de ameaças ocultas. Esta realidade pode estar mais ao seu alcance do que você pensa!</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
-  </section>
+  </main>
 </body>
 
 </html>

@@ -1,10 +1,13 @@
 @import url("global.css");
 @import url("footer.css");
 @import url("hero.css");
+@import url("advantages.css");
 
 :root {
   --e1: #ee6c22;
-  --e2: #38e900;
+  --e2: #b64300;
+  --e3: #38e900;
+  --e4: #2e9110;
   --c1: #ffffff;
   --c2: #e7e6e6;
   --c3: #bfbfbf;
@@ -40,4 +43,24 @@ li {
 
 li {
   list-style: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.room-background {
+  background: url("../assets/img/room.png") no-repeat;
+  background-position: 35% 4.2%;
+  background-size: 250%;
 }
