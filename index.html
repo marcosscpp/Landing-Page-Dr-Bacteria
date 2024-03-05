@@ -16,6 +16,21 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Dr Bactéria - Vida sem Germes</title>
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '788385176470510');
+      fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=788385176470510&ev=PageView&noscript=1"
+      /></noscript>
   </head>
 
   <body>
@@ -48,7 +63,7 @@
               idades
             </p>
           </div>
-          <form class="hero__form">
+          <form class="hero__form" method="post">
             <div class="col-2">
               <input
                 class="default-input"
@@ -231,9 +246,28 @@
               </div>
             </div>
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev swiper-btn"></div>
+            <div class="swiper-button-next swiper-btn"></div>
           </div>
+        </section>
+        <section class="presentation container">
+          <aside class="presentation__img"></aside>
+          <article class="presentation__infos">
+            <img src="./assets/icons/video.svg" alt="" />
+            <p>
+              <em>
+                Temos o prazer de apresentar o evento online "Vida Sem Germes do
+                Mal", uma sessão exclusiva com o Dr. Bactéria,
+              </em>
+              cuja renomada experiência e autoridade em microbiologia são
+              reconhecidas nacionalmente.
+            </p>
+            <p>
+              Ele compromete-se a compartilhar técnicas simples, mas
+              extremamente eficazes, garantindo a segurança e o bem-estar da sua
+              família.
+            </p>
+          </article>
         </section>
       </div>
     </main>

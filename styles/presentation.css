@@ -1,0 +1,37 @@
+.presentation {
+  display: flex;
+}
+
+.presentation__img {
+  background: url("../assets/img/kitchen2.png");
+  border-radius: 20px 0 0 20px;
+  clip-path: polygon(
+    0% 0%,
+    100% 0,
+    100% 25%,
+    120% 30%,
+    100% 38%,
+    100% 100%,
+    0 100%
+  );
+  width: 66%;
+}
+
+.presentation__infos {
+  background-color: var(--e1);
+  border-radius: 0 20px 20px 0;
+  color: var(--c1);
+  line-height: 1.63;
+  font-size: 18px;
+  padding: 50px 70px 70px 50px;
+  width: 35%;
+}
+
+.presentation__infos p {
+  margin-top: 30px;
+}
+
+.presentation__infos em {
+  display: block;
+  font-weight: 900;
+}

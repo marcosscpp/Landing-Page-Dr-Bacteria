@@ -7,7 +7,6 @@ const benefitsSwiper = new Swiper("[data-swiper='advantages']", {
     delay: 5000,
     disableOnInteraction: false,
   },
-  slidesPerView: 3,
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
@@ -17,7 +16,7 @@ const benefitsSwiper = new Swiper("[data-swiper='advantages']", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  
+
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -55,3 +54,33 @@ function setEqualHeight(selector) {
     slide.style.height = maxHeight + "px";
   });
 }
+
+const form = document.querySelector(".hero__form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  fetch("../send-lead.php", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => response.text())
+    .catch((error) => {});
+
+    fetch("../cadastro.php", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.text())
+      .catch((error) => {});
+    
+});
+
+function activatePixel(phpUrl) {
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", phpUrl, true);
+  xhr.send();
+}
+
+activatePixel("pageview.php");
