@@ -1,0 +1,53 @@
+.course-cta {
+  background: url("../assets/img/computer-user.png") no-repeat;
+  background-position: 10vw top;
+  background-size: 100% auto;
+  padding: 200px 60px;
+}
+
+.promo {
+  align-items: center;
+  background: url("../assets/icons/promo.svg") no-repeat;
+  background-size: cover;
+  color: var(--c1);
+  display: flex;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 20px;
+  left: 70%;
+  top: -40%;
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  z-index: 1;
+}
+
+.course-cta .green-btn {
+  margin: 30px auto;
+}
+
+.course-cta__container {
+  position: relative;
+  background: rgba(238, 108, 34, 0.8);
+  border: solid 3px rgba(238, 109, 34, 0.9);
+  border-radius: 40px;
+  color: var(--c1);
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 20px;
+  text-align: center;
+  padding: 40px 20px;
+  width: 50%;
+}
+
+.course-cta__text {
+  font-size: 24px;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.course-cta__text span {
+  font-weight: 800;
+}

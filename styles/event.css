@@ -1,0 +1,59 @@
+.event {
+  background: linear-gradient(
+      rgba(238, 109, 34, 0.85),
+      rgba(238, 109, 34, 0.85)
+    ),
+    url("../assets/img/kitchen2.png") center 10% no-repeat;
+  background-size: 120%;
+  border-radius: 90px 90px 0 0;
+  color: var(--c1);
+  padding: 12rem 9rem 10rem 9rem;
+}
+
+.event__texts {
+  align-items: flex-start;
+  display: flex;
+  font-size: 28px;
+  font-weight: bold;
+  justify-content: space-evenly;
+  margin-bottom: 80px;
+  line-height: 1.67;
+  width: 100%;
+}
+
+.event__text {
+  width: 40%;
+}
+
+.event__text,
+.event__text p {
+  text-wrap: pretty;
+}
+
+.event__info {
+  display: flex;
+  border: 3px solid var(--c1);
+  border-radius: 90px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.info {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.info__img {
+  height: 60px;
+}
+
+.info__title {
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+.info:nth-child(2n + 1) .info__title {
+  width: 50%;
+}

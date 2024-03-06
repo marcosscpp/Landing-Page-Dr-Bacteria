@@ -4,6 +4,8 @@
 @import url("advantages.css");
 @import url("swiper.css");
 @import url("presentation.css");
+@import url("event.css");
+@import url("course-cta.css");
 
 :root {
   --e1: #ee6c22;
