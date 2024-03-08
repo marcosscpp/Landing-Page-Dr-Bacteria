@@ -79,13 +79,9 @@
           <div class="centralized">
             <img
               class="main-logo"
-              src="./assets/icons/main-logo-tall.svg"
+              src="./assets/icons/logo-horizontal.svg"
               alt="Vida sem Germes do mal"
             />
-            <h1 class="hero__title">
-              O segredo para uma casa saudável e segura
-              <strong>com Dr Bactéria</strong>
-            </h1>
           </div>
           <p class="hero__main-content">
             DESCUBRA COMO PROTEGER SUA FAMÍLIA DE DOENÇAS COM
@@ -200,6 +196,20 @@
                   Imagine um lar completamente seguro de ameaças ocultas. Esta
                   realidade pode estar mais ao seu alcance do que você pensa!
                 </p>
+                <div class="mini-cards card__extra">
+                  <div class="mini-card">
+                    <img
+                      src="./assets/icons/computer.svg"
+                      alt="Icone Computador"
+                    />
+                    <h5 class="orange">100% Online</h5>
+                  </div>
+
+                  <div class="mini-card">
+                    <img src="./assets/icons/free.svg" alt="Icone Gratuito" />
+                    <h5 class="orange">100% Gratuito</h5>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -368,8 +378,101 @@
           </p>
         </div>
       </section>
-      <section></section>
+      <section class="about">
+        <div class="about__parts">
+          <div class="about__part1 part">
+            <h3 class="about__title">Sobre o autor</h3>
+            <img src="./assets/icons/bacteria.svg" alt="Icone Bactéria" />
+          </div>
+          <div class="about__part2 part">
+            <p>
+              Dr. Bactéria, nome profissional de Roberto Martins Figueiredo, é
+              um renomado biomédico especializado em microbiologia e higiene
+              alimentar com mais de 40 anos de carreira. Conhecido por sua
+              capacidade de transformar complexos conceitos científicos em
+              conhecimento acessível, ele se dedicou
+            </p>
+            <div>
+              <p>
+                a educar o público sobre a importância da higiene para prevenir
+                doenças. Sua presença na mídia desde 2001, incluindo televisão,
+                rádio e plataformas digitais, solidificou sua posição como uma
+                figura de confiança e autoridade em saúde pública no Brasil.
+              </p>
+
+              <button class="about__button" data-modal="open">
+                Ler Mais +
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="final-form">
+        <form class="hero__form" method="post">
+          <div class="col-2">
+            <input
+              class="default-input"
+              type="text"
+              name="complete-name"
+              id="complete-name"
+              placeholder="Seu nome"
+              required
+            />
+            <input
+              class="default-input"
+              type="tel"
+              name="whatsapp"
+              id="whatsapp"
+              placeholder="Seu Whatsapp"
+              pattern="^(\+55\s?)?(\([1-9]{2}\)\s?)?9([0-9]{4})-?([0-9]{4})$"
+              required
+            />
+          </div>
+          <input
+            class="default-input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Seu Email"
+            required
+          />
+          <input
+            class="green-btn"
+            type="submit"
+            value="Quero Assistir a Aula Agora!"
+          />
+        </form>
+      </section>
+      <footer></footer>
     </main>
+    <div class="modal">
+      <div class="modal__box">
+        <button class="modal__btn" data-modal="close">X</button>
+        <hr class="modal__line" />
+        <div class="modal__text">
+          <p>
+            Ao longo de sua carreira, Dr. Bactéria fez aparições significativas
+            em diversos programas de televisão e entrevistas, marcando presença
+            em palcos de grande audiência como o "Jô Soares", onde compartilhou
+            suas valiosas dicas de higiene e segurança alimentar de maneira
+            humorada e informativa. Também participou do "The Noite com Danilo
+            Gentili", onde sua habilidade de comunicar questões complexas de
+            saúde de forma acessível foi novamente destacada. Essas aparições
+            ajudaram a reforçar seu papel como educador público e promotor da
+            saúde.
+          </p>
+          <p>
+            Aos quase 70 anos, ele continua a influenciar positivamente a vida
+            das pessoas com dicas práticas para um ambiente mais saudável, por
+            meio de seus livros, palestras e workshops, motivado pelo feedback
+            gratificante que recebe diariamente. Dr. Bactéria é um verdadeiro
+            agente de mudança na forma como os brasileiros encaram a higiene
+            pessoal e a segurança dos alimentos, utilizando plataformas de mídia
+            diversas para espalhar sua mensagem e alcançar um público amplo.
+          </p>
+        </div>
+      </div>
+    </div>
     <script src="./scripts/script.js"></script>
   </body>
 </html>

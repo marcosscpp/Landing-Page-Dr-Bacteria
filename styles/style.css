@@ -1,11 +1,13 @@
 @import url("global.css");
-@import url("footer.css");
 @import url("hero.css");
 @import url("advantages.css");
 @import url("swiper.css");
 @import url("presentation.css");
 @import url("event.css");
 @import url("course-cta.css");
+@import url("about.css");
+@import url("modal.css");
+@import url("footer.css");
 
 :root {
   --e1: #ee6c22;
@@ -60,6 +62,18 @@ li {
 
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }
 

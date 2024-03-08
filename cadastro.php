@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     'external_id' => $_SERVER['REMOTE_ADDR'],
                     'client_ip_address' => $_SERVER['REMOTE_ADDR'],
                     'client_user_agent' => $_SERVER['HTTP_USER_AGENT'],
-                    'fbc' => filter_input(INPUT_COOKIE, '_fbc'),
+                    'fbc' => filter_input(INPUT_COOKIE, '_fbc') ? filter_input(INPUT_COOKIE, '_fbc') : null,
                     'fbp' => filter_input(INPUT_COOKIE, '_fbp'),
                     'st' => $estadoHash,
                     'country' => $paisHash,

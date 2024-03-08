@@ -1,8 +1,13 @@
 .course-cta {
-  background: url("../assets/img/computer-user.png") no-repeat;
+  background: linear-gradient(
+      360deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(213, 213, 213, 0) 100%
+    ),
+    url("../assets/img/computer-user.png") no-repeat;
   background-position: 10vw top;
   background-size: 100% auto;
-  padding: 200px 60px;
+  padding: 200px 60px 250px 60px;
 }
 
 .promo {

@@ -4,7 +4,11 @@ $pixelId = '788385176470510';
 $accessToken = 'EAATAnEQbIskBOZC7flg8NY5UCY8ZCt6uHz2CZBrn135OdSDbj1NT2fHDglpAxV0MI3fSZA6z97zpcUCoc8NqITIlmk9tk4Iw5t4nHIKD7rx7DnWUa62oX1ZAwrzVsX4u1i6v7ERcBQz1FXLaHNJZB9iQfnKmOFYc82DlT2tKNneu1VvcgGEoqZCkaKwPgf9RQVaOQZDZD';
 $url = "https://graph.facebook.com/v11.0/$pixelId/events";
 
-
+$geoData = getGeoLocation($userIP);
+$estadoHash = hash('sha256', $geoData['region']);
+$paisHash = hash('sha256', $geoData['country']);
+$cidadeHash = hash('sha256', $geoData['city']);
+$zipHash = hash("sha256", $geoData['zip']);
 
 $data = [
     'data' => [
@@ -14,8 +18,15 @@ $data = [
             'action_source' => 'website',
             'event_source_url' => 'https://drbacteria.com/',
             'user_data' => [
+                'external_id' => $_SERVER['REMOTE_ADDR'],
                 'client_ip_address' => $_SERVER['REMOTE_ADDR'],
                 'client_user_agent' => $_SERVER['HTTP_USER_AGENT'],
+                'fbc' => filter_input(INPUT_COOKIE, '_fbc') ? filter_input(INPUT_COOKIE, '_fbc') : null,
+                'fbp' => filter_input(INPUT_COOKIE, '_fbp'),
+                'st' => $estadoHash,
+                'country' => $paisHash,
+                'ct' => $cidadeHash, 
+                'zp' => $zipHash,
             ],
         ],
     ],

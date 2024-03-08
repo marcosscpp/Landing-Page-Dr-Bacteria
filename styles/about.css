@@ -1,0 +1,88 @@
+.about {
+  align-items: flex-start;
+  color: var(--c1);
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding-right: 5px;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  height: 115%;
+  transform: translateY(-13%);
+  width: 40vw;
+  background: url("../assets/img/dr-bacteria.png") no-repeat center;
+  background-size: contain;
+  left: 0;
+}
+
+.about__parts {
+  background: var(--e1);
+  border-radius: 20px;
+  padding: 80px 100px 75px 300px;
+  width: 80%;
+  font-weight: 600;
+  justify-content: center;
+  gap: 50px;
+}
+
+.part > * {
+  line-height: 1.7;
+  width: 42%;
+}
+
+.part {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__part1 {
+  position: relative;
+}
+
+.part img {
+  width: 90px;
+}
+
+.about__title {
+  width: 50%;
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.about__title::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url("../assets/icons/big-arrow.svg") center;
+  background-size: cover;
+  transform: translateX(-120%);
+  top: 10px;
+}
+
+.about__button {
+  background-color: transparent;
+  border: 2px solid var(--c1);
+  border-radius: 90px;
+  color: var(--c1);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 32px;
+  transition: background 0.3s, color 0.3s;
+  margin-top: 20px;
+}
+
+.about__button:hover {
+  background: var(--c1);
+  cursor: pointer;
+  color: var(--e1);
+}

@@ -68,13 +68,12 @@ form.addEventListener("submit", (e) => {
     .then((response) => response.text())
     .catch((error) => {});
 
-    fetch("../cadastro.php", {
-      method: "POST",
-      body: formData,
-    })
-      .then((response) => response.text())
-      .catch((error) => {});
-    
+  fetch("../cadastro.php", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => response.text())
+    .catch((error) => {});
 });
 
 function activatePixel(phpUrl) {
@@ -84,3 +83,16 @@ function activatePixel(phpUrl) {
 }
 
 activatePixel("pageview.php");
+
+const modal = document.querySelector(".modal");
+const modalButtons = document.querySelectorAll("[data-modal]");
+modal.addEventListener("click", (e) => {
+  if (e.target.classList.contains("modal")) {
+    modal.classList.remove("active");
+  }
+});
+modalButtons.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    modal.classList.toggle("active");
+  });
+});
