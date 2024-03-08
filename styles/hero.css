@@ -1,11 +1,11 @@
 .hero {
   background: url("../assets/img/kitchen.png") center no-repeat;
   background-size: cover;
-  display: grid;
+  display: flex;
   gap: 30px;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
   justify-content: space-between;
+  align-items: end;
+  padding-top: 20px;
 }
 
 .hero__content {
@@ -62,5 +62,5 @@
 }
 
 .hero__image {
-  height: 90%;
+  width: 35%;
 }
