@@ -70,3 +70,7 @@
   bottom: 5%;
   right: 5%;
 }
+
+.modal-form {
+  display: none;
+}

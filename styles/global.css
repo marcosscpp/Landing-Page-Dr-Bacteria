@@ -23,7 +23,7 @@ form {
   margin-top: 20px;
 }
 
-form div {
+.col-2 {
   display: flex;
   gap: 5px;
 }
@@ -56,9 +56,9 @@ input[type="submit"] {
   border-radius: 12px;
   box-shadow: 4px 2px 20px 6px #35b30e;
   color: var(--c1);
-  font-size: 24px;
+  font-size: clamp(12px, 4vw, 32px);
   font-weight: bolder;
-  padding: 20px 15px;
+  padding: 20px 40px;
   text-transform: uppercase;
   transition: background 0.5s;
 
@@ -87,8 +87,13 @@ input[type="submit"] {
   padding: 10px;
   text-transform: uppercase;
 }
+
+.mini-card img {
+  width: clamp(12px, 5vw, 48px);
+}
+
 .mini-card h5 {
-  font-size: 18px;
+  font-size: clamp(8px, 1.5vw, 20px);
   font-weight: 800;
   margin: 0 auto;
   text-align: center;
@@ -98,4 +103,11 @@ input[type="submit"] {
 .bubble-bg {
   background: url("../assets/img/bubbles.png") no-repeat;
   background-size: cover;
+}
+
+
+@media (max-width: 920px) {
+  .col-2 {
+    flex-direction: column;
+  }
 }

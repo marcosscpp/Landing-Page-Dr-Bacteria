@@ -79,7 +79,7 @@
           <div>
             <img
               class="main-logo"
-              src="./assets/icons/logo-horizontal.svg"
+              src="./assets/icons/main-logo-tall.svg"
               alt="Vida sem Germes do mal"
             />
           </div>
@@ -382,7 +382,7 @@
           </h3>
           <div class="subscribe__wrapper">
             <div class="subscribe__infos">
-              <div class="mini-cards card__extra">
+              <div class="mini-cards card__extra subscribe__cards">
                 <div class="mini-card">
                   <img
                     src="./assets/icons/computer.svg"
@@ -494,6 +494,42 @@
         </footer>
       </div>
     </main>
+    <div class="modal-form">
+      <form data-form class="hero__form" method="post">
+        <div class="col-2">
+          <input
+            class="default-input"
+            type="text"
+            name="complete-name"
+            id="complete-name"
+            placeholder="Seu nome"
+            required
+          />
+          <input
+            class="default-input"
+            type="tel"
+            name="whatsapp"
+            id="whatsapp"
+            placeholder="Seu Whatsapp"
+            pattern="^(\+55\s?)?(\([1-9]{2}\)\s?)?9([0-9]{4})-?([0-9]{4})$"
+            required
+          />
+        </div>
+        <input
+          class="default-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Seu Email"
+          required
+        />
+        <input
+          class="green-btn"
+          type="submit"
+          value="Quero Assistir a essa Aula!"
+        />
+      </form>
+    </div>
     <div class="modal">
       <div class="modal__box">
         <button class="modal__btn" data-modal="close">X</button>

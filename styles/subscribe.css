@@ -27,7 +27,7 @@
 .subscribe__title {
   margin-bottom: 15px;
   font-weight: 800;
-  font-size: 40px;
+  font-size: clamp(12px, 3vw, 40px);
 }
 
 .subscribe__infos {
@@ -44,18 +44,41 @@
 }
 
 .subscribe__date img {
-  width: 70px;
+  width: clamp(30px, 5vw, 70px);
 }
 
 .subscribe__date h4 {
+  font-size: clamp(10px, 3vw, 32px);
   margin: 0;
 }
 
 .subscribe__submit {
-  padding: 20px 60px;
   position: absolute;
-  font-size: 32px;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 150%);
+}
+
+@media (max-width: 920px) {
+  .subscribe__wrapper {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .subscribe__infos {
+    flex-direction: column;
+  }
+
+  .subscribe__date {
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .subscribe__date br {
+    display: none;
+  }
+
+  .subscribe__cards {
+    width: 100%;
+  }
 }
