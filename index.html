@@ -95,7 +95,7 @@
               caminho de saúde impenetrável, adequado para todas as idades
             </p>
           </div>
-          <form class="hero__form" method="post">
+          <form data-form class="hero__form" method="post">
             <div class="col-2">
               <input
                 class="default-input"
@@ -197,13 +197,13 @@
                   <div class="mini-card">
                     <img
                       src="./assets/icons/computer.svg"
-                      alt="Icone Computador"
+                      alt="Ícone Computador"
                     />
                     <h5 class="orange">100% Online</h5>
                   </div>
 
                   <div class="mini-card">
-                    <img src="./assets/icons/free.svg" alt="Icone Gratuito" />
+                    <img src="./assets/icons/free.svg" alt="Ícone Gratuito" />
                     <h5 class="orange">100% Gratuito</h5>
                   </div>
                 </div>
@@ -379,7 +379,7 @@
         <div class="about__parts">
           <div class="about__part1 part">
             <h3 class="about__title">Sobre o autor</h3>
-            <img src="./assets/icons/bacteria.svg" alt="Icone Bactéria" />
+            <img src="./assets/icons/bacteria.svg" alt="Ícone Bactéria" />
           </div>
           <div class="about__part2 part">
             <p>
@@ -404,43 +404,122 @@
           </div>
         </div>
       </section>
-      <section class="final-form">
-        <form class="hero__form" method="post">
-          <div class="col-2">
-            <input
-              class="default-input"
-              type="text"
-              name="complete-name"
-              id="complete-name"
-              placeholder="Seu nome"
-              required
-            />
-            <input
-              class="default-input"
-              type="tel"
-              name="whatsapp"
-              id="whatsapp"
-              placeholder="Seu Whatsapp"
-              pattern="^(\+55\s?)?(\([1-9]{2}\)\s?)?9([0-9]{4})-?([0-9]{4})$"
-              required
-            />
+      <div class="bubble-bg">
+        <section class="subscribe">
+          <img
+            class="subscribe__logo"
+            src="./assets/icons/logo-horizontal.svg"
+            alt="Vida sem Germes do Mal com Dr.Bacteria"
+          />
+          <h3 class="orange subscribe__title">
+            O segredo para uma casa saudável e segura
+          </h3>
+          <div class="subscribe__wrapper">
+            <div class="subscribe__infos">
+              <div class="mini-cards card__extra">
+                <div class="mini-card">
+                  <img
+                    src="./assets/icons/computer.svg"
+                    alt="Ícone Computador"
+                  />
+                  <h5 class="orange">100% Online</h5>
+                </div>
+
+                <div class="mini-card">
+                  <img src="./assets/icons/free.svg" alt="Ícone Gratuito" />
+                  <h5 class="orange">100% Gratuito</h5>
+                </div>
+              </div>
+              <div class="subscribe__date">
+                <img
+                  src="./assets/icons/calendar.svg"
+                  alt="Ícone de Calendário"
+                />
+                <h4>28 de Março<br />(quinta-feira) <br />às 20 horas</h4>
+              </div>
+            </div>
+            <form data-form class="subscribe__form" method="post">
+              <div class="col-2">
+                <input
+                  class="default-input"
+                  type="text"
+                  name="complete-name"
+                  id="complete-name"
+                  placeholder="Seu nome"
+                  required
+                />
+                <input
+                  class="default-input"
+                  type="tel"
+                  name="whatsapp"
+                  id="whatsapp"
+                  placeholder="Seu Whatsapp"
+                  pattern="^(\+55\s?)?(\([1-9]{2}\)\s?)?9([0-9]{4})-?([0-9]{4})$"
+                  required
+                />
+              </div>
+              <input
+                class="default-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Seu Email"
+                required
+              />
+              <input
+                class="green-btn subscribe__submit"
+                type="submit"
+                value="Garantir meu lugar agora!"
+              />
+            </form>
           </div>
-          <input
-            class="default-input"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Seu Email"
-            required
-          />
-          <input
-            class="green-btn"
-            type="submit"
-            value="Quero Assistir a Aula!"
-          />
-        </form>
-      </section>
-      <footer></footer>
+        </section>
+
+        <footer class="footer">
+          <ul class="social-media">
+            <li>
+              <a class="footer__link" href="https://www.instagram.com/drbacteriaoficial/"
+                ><img
+                  src="./assets/icons/instagram.svg"
+                  alt=""
+                />@drbacteriaoficial</a
+              >
+            </li>
+            <li>
+              <a class="footer__link" href="https://www.facebook.com/drbacteriaoficial"
+                ><img
+                  src="./assets/icons/facebook.svg"
+                  alt=""
+                />/drbacteriaoficial</a
+              >
+            </li>
+            <li>
+              <a class="footer__link" href="https://www.tiktok.com/@drbacteriaoficial">
+                <img
+                  src="./assets/icons/tiktok.svg"
+                  alt=""
+                />@drbacteriaoficial</a
+              >
+            </li>
+          </ul>
+          <div class="copyright">
+            <img
+              class="footer__logo"
+              src="./assets/icons/logo-horizontal.svg"
+              alt="Vida sem Germes do mal"
+            />
+            <p>© Dr. Bactéria. Todos os direitos reservados.</p>
+          </div>
+          <div>
+            <a class="footer__link" href="workshop@doutorbacteria.com">
+              <img
+                src="./assets/icons/email.svg"
+                alt=""
+              />workshop@doutorbacteria.com</a
+            >
+          </div>
+        </footer>
+      </div>
     </main>
     <div class="modal">
       <div class="modal__box">

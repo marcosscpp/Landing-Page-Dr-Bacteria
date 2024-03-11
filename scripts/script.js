@@ -55,27 +55,28 @@ function setEqualHeight(selector) {
   });
 }
 
-const form = document.querySelector(".hero__form");
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+const forms = document.querySelectorAll("[data-form]");
+forms.forEach((form) => {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-  const formData = new FormData(form);
+    const formData = new FormData(form);
 
-  fetch("../send-lead.php", {
-    method: "POST",
-    body: formData,
-  })
-    .then((response) => response.text())
-    .catch((error) => {});
+    fetch("../send-lead.php", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.text())
+      .catch((error) => {});
 
-  fetch("../cadastro.php", {
-    method: "POST",
-    body: formData,
-  })
-    .then((response) => response.text())
-    .catch((error) => {});
+    fetch("../cadastro.php", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.text())
+      .catch((error) => {});
+  });
 });
-
 function activatePixel(phpUrl) {
   var xhr = new XMLHttpRequest();
   xhr.open("GET", phpUrl, true);

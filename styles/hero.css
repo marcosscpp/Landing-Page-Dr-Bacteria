@@ -49,18 +49,6 @@
   margin-top: 20px;
 }
 
-.hero__form {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-top: 20px;
-}
-
-.hero__form div {
-  display: flex;
-  gap: 5px;
-}
-
 .hero__image {
   width: 35%;
 }

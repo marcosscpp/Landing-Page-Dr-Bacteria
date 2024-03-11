@@ -6,8 +6,9 @@
 @import url("event.css");
 @import url("course-cta.css");
 @import url("about.css");
-@import url("modal.css");
+@import url("subscribe.css");
 @import url("footer.css");
+@import url("modal.css");
 
 :root {
   --e1: #ee6c22;
