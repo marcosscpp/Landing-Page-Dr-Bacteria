@@ -15,6 +15,7 @@
 .cards__container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .card {
   background: var(--e1);
@@ -52,4 +53,10 @@
 }
 .card__extra .mini-card {
   flex: 1 1 0px;
+}
+
+@media (max-width: 1300px) {
+  .cards__container {
+    flex-wrap: wrap;
+  }
 }

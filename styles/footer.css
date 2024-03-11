@@ -1,10 +1,10 @@
 .footer {
-  align-items: center;
+  align-items: flex-end;
   background: var(--c1);
   display: flex;
   justify-content: space-around;
   margin-top: 200px;
-  box-shadow: 4px 4px 28px 3px #ee6c22;
+  box-shadow: 4px 4px 28px 3px var(--e1);
   margin: 200px 8px 8px 8px;
   padding: 40px 0;
   font-weight: 700;
@@ -12,7 +12,7 @@
 }
 
 .footer__logo {
-  width: 400px;
+  width: clamp(100px, 40vw, 400px);
 }
 
 .footer__link {
@@ -24,7 +24,7 @@
   margin-bottom: 12px;
 }
 
-.footer__link:hover {
+.footer__link:nth-child() .footer__link:hover {
   color: var(--e1);
   text-decoration: underline;
 }
@@ -35,4 +35,10 @@
 
 .copyright img {
   margin-bottom: 40px;
+}
+
+@media (max-width: 1280px) {
+  .footer {
+    flex-direction: column;
+  }
 }

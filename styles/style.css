@@ -13,8 +13,8 @@
 :root {
   --e1: #ee6c22;
   --e2: #b64300;
-  --e3: #38e900;
-  --e4: #2e9110;
+  --e3: #10df2d;
+  --e4: #1a9124;
   --c1: #ffffff;
   --c2: #e7e6e6;
   --c3: #bfbfbf;
@@ -44,6 +44,11 @@ h1,
 h2,
 h3,
 li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
   margin: 0;
   padding: 0;
 }

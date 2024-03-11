@@ -1,11 +1,13 @@
 .hero {
-  background: url("../assets/img/kitchen.png") center no-repeat;
-  background-size: cover;
+  align-items: end;
+  background: url("../assets/img/kitchen.png") -700px center no-repeat;
+  background-size: 150%;
   display: flex;
   gap: 30px;
+  height: 100vh;
   justify-content: space-between;
-  align-items: end;
   padding-top: 20px;
+  text-align: center;
 }
 
 .hero__content {
@@ -13,40 +15,35 @@
 }
 
 .main-logo {
-  text-align: center;
   height: 100px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero__sub-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
 .hero__title {
   margin: 0 auto;
-}
-
-.hero__title {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 600;
   line-height: 1.1;
   margin-top: 6px;
-}
-
-.hero__title strong {
-  display: block;
-  font-style: italic;
-  font-size: 28px;
-  font-weight: 900;
-}
-
-.hero__main-content {
-  font-size: 28px;
-  font-weight: 600;
-  margin-top: 30px;
-  line-height: 1.3;
+  width: 60%;
 }
 
 .hero__description {
-  font-size: 18px;
-  font-weight: 500;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 700;
   line-height: 1.3;
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  font-size: 22px;
+  width: 50%;
 }
 
 .hero__image {
